@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useEffect, useState } from 'react';
 import './App.css';
 import Fetchapi from './components/Fetchapi';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
@@ -11,19 +11,24 @@ import Login from './components/Login';
 const App=()=> {
 const [message,setMessage] = useState("");
 const [login,setLogin] = useState(false);
+const [apiID,setID]=useState("1619552c-e09f-4ffc-b8c7-931f5cd104b5");
 
 
 const setLoginCall = (msg)=>{
   
-  if(msg === "faiz")
+  if(msg === apiID)
  { setLogin(1);
     setMessage("Success");
 }
   else
   setMessage("Wrong API");
 }
+useEffect(() => {
+  console.log("apiID",apiID)
+});
 
-    return ((!login)?<Login message = {message} login ={login} setLogin ={setLoginCall}/>:<Router>
+
+    return ((!login)?<Login apiID={apiID} message = {message} login ={login} setLogin ={setLoginCall}/>:<Router>
       <div className="App">
        <h1>
         Bulk Lead ​ Retrieval ​ API
@@ -36,7 +41,7 @@ const setLoginCall = (msg)=>{
     <Switch>
         <Route
     exact path='/'
-    render={(props) => <Hello {...props} message={message} setMessage = {setMessage}/>}
+    render={(props) => <Hello {...props} message={message} setMessage = {setMessage} apiID ={apiID}/>}
   />
         <Route path='/fetch' component={Fetchapi} />
         {/* <Route path = '/hello' render = {Hello}/> */}

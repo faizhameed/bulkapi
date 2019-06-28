@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, {useEffect, Fragment, useState } from 'react';
 import Fetchapi from './Fetchapi';
 import './Login.css';
 
@@ -11,6 +11,13 @@ return wrond api
  else if    how to call props from a function 
 
 */
+
+const[apiID]=useState(props.apiID);
+const[test]=useState("Testing");
+
+useEffect(() => {
+    console.log("apiID from login.js",props.apiID)
+  });
 
 const onload=()=> { 
     const msg = document.getElementById('api');
@@ -28,10 +35,17 @@ const onload=()=> {
       
        <input type="password" id = "api"placeholder="API KEY...">
        </input>
-       <button className="btn"onClick ={() => onload()}>Enter</button>{
-           props.login?<div><h1>Login:{props.login}</h1><Fetchapi/></div>: <div className="mbox">
+       <button className="btn"onClick ={() => onload()}>Enter</button>
+       {
+           !props.login?
+           <div className="mbox">
            <h3>{props.message}</h3>
-       </div>     }
+       </div>    
+           : 
+           <div><h1>Login:{props.login}</h1>
+           <Fetchapi apiID ={apiID} test ={test}/>
+           </div>
+     }
 
        </div>
    </Fragment>

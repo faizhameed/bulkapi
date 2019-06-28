@@ -3,13 +3,9 @@ import {Modal,Table} from 'react-bootstrap';
 import Person from './Person';
 
 
-
-
-
-
 class Fetchapi extends Component {
-  constructor(props,context) {
-    super(props, context);
+  constructor(props) {
+    super(props);
     
     this.state = { 
       datas:[],
@@ -158,9 +154,12 @@ componentDidUpdate() {
             btn.classList.add("disabled");}
         else
         btn.classList.remove("disabled");
-        
-
+  console.log("apiID from fetch",this.props.apiID)  ;
+  console.log("Test from fetch",this.props.test)
 }
+
+
+
 componentWillUnmount() {
   this._isMounted = false;
 }
@@ -213,6 +212,7 @@ handleDetails(data){
       })}
                     </tbody>
                 </Table>
+            
                 <button className = "btn"variant="secondary" id ="previous" onClick = {this.handlePrevious}>Previous</button>
                 <button className="btn"variant = "secondary" id = "next" onClick = {this.handleNext}>Next</button>
         {/* MODAL */}
