@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
 
 const Hello = ()=>{
-    return <h2>
-        Welcome
-    </h2>
+
+   
+    return <Fragment>
+       <h1>Welcome</h1>
+     
+       {/* Remove below button after test */}
+       
+    </Fragment>
 }
 export default Hello;

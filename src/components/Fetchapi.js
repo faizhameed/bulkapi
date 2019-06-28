@@ -14,7 +14,7 @@ class Fetchapi extends Component {
     this.state = { 
       datas:[],
       more_leads:true,
-      show:false,   // for madal toggling
+      show:false,   // for modal toggling
       currentPage:1,
       rowsPerPage:10,
       clickedData:{
