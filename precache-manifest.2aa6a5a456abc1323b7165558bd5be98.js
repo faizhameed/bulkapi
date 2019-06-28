@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "099db0dee6913a6f834f16c1e491e530",
+    "revision": "3b2be9a0f87d7e400ae776371a753672",
     "url": "/bulkapi/index.html"
   },
   {
-    "revision": "a415f26e06525cc4add1",
+    "revision": "d10972faa6a8eee35eb7",
     "url": "/bulkapi/static/css/main.9539d9d5.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/bulkapi/static/js/2.781c1dae.chunk.js"
   },
   {
-    "revision": "a415f26e06525cc4add1",
-    "url": "/bulkapi/static/js/main.0f7c10ba.chunk.js"
+    "revision": "d10972faa6a8eee35eb7",
+    "url": "/bulkapi/static/js/main.9b14ba88.chunk.js"
   },
   {
     "revision": "f0e65d67e4a673030f29",
