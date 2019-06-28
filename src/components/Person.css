@@ -1,0 +1,38 @@
+.detailContainer{
+width: 100%;
+  border: 4px;
+  border-radius: .5em;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+ 
+}
+
+.rtitle,.rvalue{
+    width: 320px;
+
+    display: inline-block;
+  vertical-align: middle;
+    font-family: 'Montserrat', sans-serif;
+    
+    /* background-color: blue; */
+
+    
+}
+.rvalue{
+  
+    font-weight: normal;
+}
+.rtitle{
+    margin-left: 10px;  
+}
+h3{
+    font-family: 'Merriweather', serif;
+    font-weight: normal;
+}
+
+.totalContainer{
+    margin-bottom: 25px;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
