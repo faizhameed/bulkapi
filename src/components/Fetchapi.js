@@ -86,7 +86,7 @@ componentDidMount() {
   const url = `https://test190.cfstech.xyz/lead/retrieval/?page=${currentPage}&record_size=${rowsPerPage}`
   const headers = new Headers({
   "Content-Type":"application/json",
-  "API-KEY":"1619552c-e09f-4ffc-b8c7-931f5cd104b5"
+  "API-KEY":this.props.apiID
   })
 
   if(datas.length)
@@ -124,7 +124,7 @@ componentDidUpdate() {
   const headers = new Headers({
   "Content-Type":"application/json",
   'Accept': 'application/json',
-  "API-KEY":"1619552c-e09f-4ffc-b8c7-931f5cd104b5"
+  "API-KEY":this.props.apiID
   })
 
   let req = new Request(url,
@@ -154,8 +154,8 @@ componentDidUpdate() {
             btn.classList.add("disabled");}
         else
         btn.classList.remove("disabled");
-  console.log("apiID from fetch",this.props.apiID)  ;
-  console.log("Test from fetch",this.props.test)
+
+  
 }
 
 

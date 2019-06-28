@@ -11,7 +11,7 @@ import Login from './components/Login';
 const App=()=> {
 const [message,setMessage] = useState("");
 const [login,setLogin] = useState(false);
-const [apiID,setID]=useState("1619552c-e09f-4ffc-b8c7-931f5cd104b5");
+const [apiID]=useState("1619552c-e09f-4ffc-b8c7-931f5cd104b5");
 
 
 const setLoginCall = (msg)=>{
@@ -43,11 +43,11 @@ useEffect(() => {
     exact path='/'
     render={(props) => <Hello {...props} message={message} setMessage = {setMessage} apiID ={apiID}/>}
   />
-        <Route path='/fetch' component={Fetchapi} />
+       <Route path = '/fetch' render = {(props)=> <Fetchapi {...props} apiID = {apiID}/>}/>
         {/* <Route path = '/hello' render = {Hello}/> */}
         {/* 
         MEthod to send props to router for future Refrence
-        <Route path = '/detail' render = {(props)=> <Person {...props} data = {this.state.clickedData}/>}/> */}
+        <Route path = '/fetch' render = {(props)=> <Fetchapi {...props} apiID = {apiID}/>}/> */}
        {/*  <Route
     path='/dashboard'
     render={(props) => <componentname {...props} propname={proptopass} />}

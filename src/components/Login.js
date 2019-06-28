@@ -1,4 +1,4 @@
-import React, {useEffect, Fragment, useState } from 'react';
+import React, {useEffect, Fragment} from 'react';
 import Fetchapi from './Fetchapi';
 import './Login.css';
 
@@ -12,8 +12,7 @@ return wrond api
 
 */
 
-const[apiID]=useState(props.apiID);
-const[test]=useState("Testing");
+
 
 useEffect(() => {
     console.log("apiID from login.js",props.apiID)
@@ -43,7 +42,7 @@ const onload=()=> {
        </div>    
            : 
            <div><h1>Login:{props.login}</h1>
-           <Fetchapi apiID ={apiID} test ={test}/>
+           <Fetchapi />
            </div>
      }
 
