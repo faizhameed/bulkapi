@@ -87,7 +87,7 @@ componentDidMount() {
   this._isMounted = true;
   const {datas, rowsPerPage, currentPage } = this.state;
   console.log("page",currentPage);
-  const url = `http://40.113.195.190/lead/retrieval/?page=${currentPage}&record_size=${rowsPerPage}`
+  const url = `https://test190.cfstech.xyz/lead/retrieval/?page=${currentPage}&record_size=${rowsPerPage}`
   const headers = new Headers({
   "Content-Type":"application/json",
   "API-KEY":"1619552c-e09f-4ffc-b8c7-931f5cd104b5"
@@ -124,7 +124,7 @@ componentDidUpdate() {
   this._isMounted = true;
   const {datas, rowsPerPage, currentPage } = this.state;
 
-  const url = `https://test190.cfstech.xyz/?page=${currentPage}&record_size=${rowsPerPage}`
+  const url = `https://test190.cfstech.xyz/lead/retrieval/?page=${currentPage}&record_size=${rowsPerPage}`
   const headers = new Headers({
   "Content-Type":"application/json",
   'Accept': 'application/json',
