@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ddf562eaee2d92165ae1d789dc01cb5c",
+    "revision": "6465c456760880faf84284c6bec9de43",
     "url": "/bulkapi/index.html"
   },
   {
-    "revision": "4bc0977c288a20d6414e",
+    "revision": "3fcf1620004e76c92249",
     "url": "/bulkapi/static/css/main.983d6d52.chunk.css"
   },
   {
-    "revision": "378db499528746643102",
-    "url": "/bulkapi/static/js/2.56b0ddbd.chunk.js"
+    "revision": "38208aa0a019695bcdde",
+    "url": "/bulkapi/static/js/2.714e9867.chunk.js"
   },
   {
-    "revision": "4bc0977c288a20d6414e",
-    "url": "/bulkapi/static/js/main.9e17fa3f.chunk.js"
+    "revision": "3fcf1620004e76c92249",
+    "url": "/bulkapi/static/js/main.4d923035.chunk.js"
   },
   {
     "revision": "f0e65d67e4a673030f29",
