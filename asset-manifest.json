@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/bulkapi/static/css/main.9539d9d5.chunk.css",
-    "main.js": "/bulkapi/static/js/main.9b14ba88.chunk.js",
-    "main.js.map": "/bulkapi/static/js/main.9b14ba88.chunk.js.map",
+    "main.js": "/bulkapi/static/js/main.8f321096.chunk.js",
+    "main.js.map": "/bulkapi/static/js/main.8f321096.chunk.js.map",
     "runtime~main.js": "/bulkapi/static/js/runtime~main.d3c7832d.js",
     "runtime~main.js.map": "/bulkapi/static/js/runtime~main.d3c7832d.js.map",
     "static/js/2.781c1dae.chunk.js": "/bulkapi/static/js/2.781c1dae.chunk.js",
     "static/js/2.781c1dae.chunk.js.map": "/bulkapi/static/js/2.781c1dae.chunk.js.map",
     "index.html": "/bulkapi/index.html",
-    "precache-manifest.2aa6a5a456abc1323b7165558bd5be98.js": "/bulkapi/precache-manifest.2aa6a5a456abc1323b7165558bd5be98.js",
+    "precache-manifest.b324633a41f261fd6be6a4a4147a4f6e.js": "/bulkapi/precache-manifest.b324633a41f261fd6be6a4a4147a4f6e.js",
     "service-worker.js": "/bulkapi/service-worker.js",
     "static/css/main.9539d9d5.chunk.css.map": "/bulkapi/static/css/main.9539d9d5.chunk.css.map"
   }
